@@ -41,10 +41,10 @@ const DetailSection = ({
         >
           {/* Image */}
           <motion.div
-            initial={{ opacity: 0, y: 100, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="flex-1 w-full"
           >
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm group hover:border-primary/50 transition-colors duration-500">
@@ -63,10 +63,10 @@ const DetailSection = ({
 
           {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: isImageLeft ? 50 : -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="flex-1"
           >
             <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl leading-tight">
