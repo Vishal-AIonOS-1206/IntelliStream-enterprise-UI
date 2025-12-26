@@ -8,6 +8,12 @@ import Signup from "./pages/Signup";
 import WorkspaceSelection from "./pages/WorkspaceSelection";
 import Onboarding from "./pages/Onboarding";
 import Index from "./pages/Index";
+import Dashboard from "./pages/Dashboard";
+import DataAssets from "./pages/DataAssets";
+import DatasetDetail from "./pages/DatasetDetail";
+import Monitoring from "./pages/Monitoring";
+import Approvals from "./pages/Approvals";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +30,12 @@ const App = () => (
           <Route path="/signup" element={<Signup />} />
           <Route path="/workspace-selection" element={<WorkspaceSelection />} />
           <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/assets" element={<DataAssets />} />
+          <Route path="/dashboard/assets/:id" element={<DatasetDetail />} />
+          <Route path="/dashboard/monitoring" element={<Monitoring />} />
+          <Route path="/dashboard/approvals" element={<Approvals />} />
+          <Route path="/dashboard/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

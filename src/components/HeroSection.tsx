@@ -35,8 +35,11 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary backdrop-blur-sm">
-            <Sparkles className="h-4 w-4" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/50 px-4 py-1.5 text-sm font-medium text-slate-300 backdrop-blur-sm shadow-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
             <span>Autonomous Data & AI Operations</span>
           </div>
         </motion.div>
@@ -46,10 +49,13 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="mb-6 max-w-5xl text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mb-6 max-w-5xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
         >
-          The autopilot for your{" "}
-          <span className="text-gradient">data platforms</span>
+          The autopilot for your
+          <br />
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-500 drop-shadow-sm whitespace-nowrap">
+            data platforms
+          </span>
           <br />
           is here
         </motion.h1>

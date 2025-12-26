@@ -21,7 +21,7 @@ const WorkspaceSelection = () => {
 
     const handleContinue = (workspaceId: string) => {
         console.log("Continuing to workspace:", workspaceId);
-        navigate("/"); // Navigate to dashboard
+        navigate("/dashboard"); // Navigate to dashboard
     };
 
     return (
